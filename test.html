@@ -26,6 +26,13 @@
       width: 50%;
     }
 
+    @supports (display: flex) {
+      .FlexItem {
+        background-color: palevioletred;
+        display: inline-block;
+      }
+    }
+
     @supports not ( transform: translateX(50%) ) {
       .FlexItem {
         background-color: pink;
