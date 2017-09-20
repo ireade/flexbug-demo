@@ -1,29 +1,67 @@
 <!doctype html>
 <html>
-  <meta charset="utf-8">
-  <title>Flexbugs demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
 <head>
+  <meta charset="utf-8">
+  <title>Flexbug demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /**
+    * Flexbug demo (bug)
+    */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    .FlexContainer {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .FlexItem {
+      width: 50%;
+    }
+  </style>
 </head>
 <body>
-  <h1>Flexbugs</h1>
 
   <table>
-    <tr>
-      <td>
-        Column One
+    <tr class="FlexContainer">
+      <td class="FlexItem">
+        Table Column (One)
       </td>
-      <td>
-        Column Two
+      <td class="FlexItem">
+        Table Column (Two)
       </td>
-      <td>
-        Column Three
+      <td class="FlexItem">
+        Table Column (Three)
       </td>
-      <td>
-        Column Four
+      <td class="FlexItem">
+        Table Column (Four)
       </td>
     </tr>
   </table>
+
+  <br><br>
+
+  <div class="FlexContainer">
+    <div class="FlexItem">
+      Div (One)
+    </div>
+    <div class="FlexItem">
+      Div (Two)
+    </div>
+    <div class="FlexItem">
+      Div (Three)
+    </div>
+    <div class="FlexItem">
+      Div (Four)
+    </div>
+  </div>
+
 </body>
 </html>
