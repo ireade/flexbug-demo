@@ -1,0 +1,16 @@
+/**
+ * Flexbug demo (bug)
+ */
+
+table {
+  width: 100%;
+}
+
+tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+td {
+  width: 40%;
+}
